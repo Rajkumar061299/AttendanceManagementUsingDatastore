@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://JAVA.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>AttendanceManagementUsingDatastore</display-name>
+	<servlet>
+		<description>
+  	</description>
+		<display-name>ValidateServlet</display-name>
+		<servlet-name>ValidateServlet</servlet-name>
+		<servlet-class>com.fullcreative.main.ValidateServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+  	</description>
+		<display-name>CreateNewUserServlet</display-name>
+		<servlet-name>CreateNewUserServlet</servlet-name>
+		<servlet-class>com.fullcreative.main.CreateNewUserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>FacultyServlet</display-name>
+		<servlet-name>FacultyServlet</servlet-name>
+		<servlet-class>com.fullcreative.main.FacultyServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>StudentServlet</display-name>
+		<servlet-name>StudentServlet</servlet-name>
+		<servlet-class>com.fullcreative.main.StudentServlet</servlet-class>
+	</servlet>
+		<servlet>
+		<description>
+		</description>
+		<display-name>DisplayTheStudentAttendance</display-name>
+		<servlet-name>DisplayTheStudentAttendance</servlet-name>
+		<servlet-class>com.fullcreative.main.DisplayTheStudentAttendance</servlet-class>
+	</servlet>
+	
+		<servlet>
+		<description>
+		</description>
+		<display-name>AdminServlet</display-name>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>com.fullcreative.main.AdminServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>
+		</description>
+		<display-name>ParticularStudentDetails</display-name>
+		<servlet-name>ParticularStudentDetails</servlet-name>
+		<servlet-class>com.fullcreative.main.ParticularStudentDetails</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>ParticularStudentDetails</servlet-name>
+		<url-pattern>/ParticularStudentDetails</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ValidateServlet</servlet-name>
+		<url-pattern>/ValidateServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreateNewUserServlet</servlet-name>
+		<url-pattern>/CreateNewUserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FacultyServlet</servlet-name>
+		<url-pattern>/FacultyServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StudentServlet</servlet-name>
+		<url-pattern>/StudentServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DisplayTheStudentAttendance</servlet-name>
+		<url-pattern>/DisplayTheStudentAttendance</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/AdminServlet</url-pattern>
+	</servlet-mapping>
+	
+
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+</web-app>

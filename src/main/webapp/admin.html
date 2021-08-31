@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="CreateNewUserServlet" method="post">
+
+		<h2>Add Student</h2>
+		Name<input type="text" name="sdtname" required><br>
+		E-mail<input type="text" name="sdtemail"><br> Password<input
+			type="password" name="sdtpass" required><br> <input
+			type="submit" value="Add student" name="submit"><br>
+
+	</form>
+
+	<form action="CreateNewUserServlet" method="post">
+
+		<h2>Add Faculty</h2>
+		Name<input type="text" name="facname" required><br>
+		E-mail<input type="text" name="facemail"><br> Password<input
+			type="password" name="facpass" required><br>
+		<br>
+		<br> <input type="submit" value="Add faculty" name="submit"><br>
+	</form>
+
+
+
+	<br>
+	<br>
+	
+
+
+	<h2>Update the Student attendance</h2>
+	<form action="AdminServlet" method="post">
+		<label for="email"><b>Enter an Email</b></label> <input type="text"
+			placeholder="Enter an Email" name="email" required> <label
+			for="date"><b>Date:</b></label> <input type="date" id="date"
+			name="date"> <input type="radio" id="present"
+			name="attendance" value="present">   <label for="present">present</label>
+		  <input type="radio" id="absent" name="attendance" value="absent">
+		  <label for="absent">absent</label><br> <br> <input
+			type="submit">
+	</form>
+
+	<br>
+	<br>
+	<br>
+
+	<h2>Student Attendance Details</h2>
+	<form action="ParticularStudentDetails" method="post">
+	<label for="email"><b>Enter an Email</b></label> <input type="text"
+			placeholder="Enter an Email" name="email1" >
+	<label for="email"><b>Enter an Email</b></label> <input type="text"
+			placeholder="Enter an Email" name="email2" >
+	<label for="email"><b>Enter an Email</b></label> <input type="text"
+			placeholder="Enter an Email" name="email3" >
+		<label for="date"><b>Date:</b></label> <input type="date" id="date"
+			name="date" required> <input type="submit">
+	</form>
